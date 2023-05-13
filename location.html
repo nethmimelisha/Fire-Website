@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]><html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+    <!--<![endif]-->
+
+    <head>
+        <!-- Basic Page Needs -->
+        <meta charset="utf-8" />
+        <title>Fire Service Department</title>
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+
+        <!-- Mobile Specific Metas -->
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+
+        <link rel="shortcut icon" href="/images/logo (2).png" />
+
+        <!-- FONTS -->
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Barlow:100,200,300,400,400italic,500,700,700italic,900"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Barlow+Condensed:100,200,300,400,400italic,500,700,700italic,900"
+        />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/assets/css/global.css" />
+        <link rel="stylesheet" href="css/structure.css" />
+        <link rel="stylesheet" href="css/firebrigade.css" />
+        <link rel="stylesheet" href="css/custom.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css"
+        />
+        <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=-eknC6eS5M0pkI5JVQtBdMjYBijFwm5wUPNhOxBz9_SNCiWcShpprRVGv1V03oY71IBWHxBn4l7-jTxHSrjTWxYAZknm4AEC94R-Krgxald9DXwDfExas1lcZ6_gi0mYQNc5I1cOxLJdQ6HtCRfKgWbj3W_hKHc1ymCE6VYyXxiTEZXnMcC8P6PEjHO0f620rZq1Cc0PDmHU_9FdTMtdWQ" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9oZGVjbG91ZC5wcml2YXRlc2Ruc2VydmVycy5jb206MjA4My9jcHNlc3M5ODY3MjcyODE0L2Rvd25sb2FkP3NraXBlbmNvZGU9MSZmaWxlPSUyZmhvbWUlMmZpZWZvanJtZiUyZnB1YmxpY19odG1sJTJmbG9jYXRpb24uaHRtbA"/><style>
+            #map {
+                height: 100vh;
+                
+                
+            }
+        </style>
+    </head>
+
+    <body
+        class="page style-simple button-flat layout-full-width if-zoom no-content-padding hide-love header-transparent header-fw minimalist-header-no sticky-header sticky-tb-color ab-hide subheader-title-left menu-line-below-80-1 menuo-right menuo-no-borders mobile-tb-center mobile-mini-mr-ll tablet-sticky mobile-header-mini mobile-sticky"
+    >
+        <div id="Wrapper">
+            <div id="Header_wrapper" class>
+                <header id="Header">
+                    <div id="Top_bar">
+                        <div class="container">
+                            <div class="column one">
+                                <div class="top_bar_left clearfix">
+                                    <div class="logo">
+                                        <a
+                                            id="logo"
+                                            href="/index.html"
+                                            title="BeFireBrigade - Betheme"
+                                            data-height="80"
+                                            data-padding="30"
+                                            ><img
+                                                class="logo-main scale-with-grid"
+                                                src="images/firebrigade_logo.png"
+                                                data-retina="images/firebrigade_logo_2x.png"
+                                                data-height="95" /><img
+                                                class="logo-sticky scale-with-grid"
+                                                src="images/logo_sticky.png"
+                                                data-retina="images/logo-sticky@2x.png"
+                                                data-height="95" /><img
+                                                class="logo-mobile scale-with-grid"
+                                                src="images/firebrigade_logo.png"
+                                                data-retina="images/firebrigade_logo_2x.png"
+                                                data-height="95" /><img
+                                                class="logo-mobile-sticky scale-with-grid"
+                                                src="images/firebrigade_logo.png"
+                                                data-retina="images/firebrigade_logo_2x.png"
+                                                data-height="95"
+                                        /></a>
+                                    </div>
+                                    <div class="menu_wrapper">
+                                        <nav id="menu">
+                                            <ul
+                                                id="menu-menu"
+                                                class="menu menu-main"
+                                            >
+                                                <li
+                                                    class="current-menu-item page_item current_page_item"
+                                                >
+                                                    <a href="index.html"
+                                                        ><span>HOME</span></a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="/CMC.html"><span>CMC</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="/department.html"
+                                                        ><span
+                                                            >DEPARTMENTS</span
+                                                        ></a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="/news.html"
+                                                        ><span>EVENTS</span></a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="/gallery.html"
+                                                        ><span>GALLERY</span></a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="/team.html"
+                                                        ><span
+                                                            >OUR TEAM</span
+                                                        ></a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="/history.html"
+                                                        ><span>HISTORY</span></a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="/location.html"
+                                                        ><span
+                                                            >LOCATIONS</span
+                                                        ></a
+                                                    >
+                                                </li>
+                                               
+                                                <li>
+                                                    <a href="/contact.html"
+                                                        ><span>CONTACT</span></a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                        <a
+                                            class="responsive-menu-toggle"
+                                            href="#"
+                                            ><i class="icon-menu-fine"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div id="Subheader">
+                    <div class="container">
+                        <div class="column one">
+                            <h1 class="title">OUR LOCATIONS</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap mcb-wrap one valign-top clearfix">
+                <div class="mcb-wrap-inner">
+                    <div class="column mcb-column one column_divider">
+                        <hr class="no_line" style="margin:0 auto 30px">
+                    </div>
+                    <div class="column mcb-column one-fifth column_placeholder">
+                        <div class="placeholder">
+                            &nbsp;
+                        </div>
+                    </div>
+                    <div class="column mcb-column three-fifth column_column">
+                        <div class="column_attr clearfix">
+                        </div> 
+                       
+
+
+                           <h4><B>
+                            <span class="themecolor"> CMC Fire Service Department</span> <br> Address: T. B. Jayah Mawatha, Colombo 010 <br> Contact No: 0112 422 222 <br> <br>
+                            <span class="themecolor"> Negombo Fire and Rescue</span> <br> Address: 11500, Negambo Rd, Negambo<br> Contact:  0312 224 063<br> <br>
+                            <span class="themecolor"> Kotte Fire Brigade</span> <br> Address: 181/A Nanayakkara Mawatha, Sri Jayawardenepura Kotte <br>Contact:  0112 879 444<br> <br>
+                            <span class="themecolor"> Kandy Fire Brigade</span> <br> Address: William Gopallawa Mawatha, Kandy<br>Contact:  0812 204 844<br> <br>
+                            <span class="themecolor">  Gampaha Fire Service Department </span> <br> Address: Pokuna Rd, Gampaha<br> Contact:  0332 224 444<br> <br>
+                            <span class="themecolor">  Kalutara Fire Brigade</span> <br>Address: HXP6+8JJ, Kalutara<br> Contact:  0342 228 080<br> <br>
+                            <span class="themecolor">  Matara Fire & Rescue  </span> <br>Address: Municipal Council, 81000 Matara<br>Contact:  0412 236 000<br> <br>
+                            <span class="themecolor">   Polonnawruwa Fire Brigade  </span> <br>Address: 1st Canal Road, Polonnaruwa<br>
+                            Contact:  0272 224 477<br> <br>
+                            <span class="themecolor">    Anuradhapura Fire Brigade </span> <br>Address: 8CG5+G43, Anuradhapura<br>
+                            Contact:  0252 227 799<br> <br>
+                            <span class="themecolor">  Jaffna Fire Brigade </span> <br>Address: AB20, Jaffna<br>
+                            Contact:  0212 222 275<br> <br>
+                            <span class="themecolor">  Moratuwa Fire & Rescue  </span> <br>Address: Pieris Mawatha, Moratuwa <br>
+                            Contact:  0112 645 454<br> <br>
+                            <span class="themecolor"> Bandarawela Fire & Rescue </span> <br>Address: Bandarawela Municipal Council, Bandarawela <br>
+                            Contact: 0573 131 313<br> <br>
+                            <span class="themecolor">  Badulla Fire Brigade</span> <br> Address: King's Street, Badulla <br>
+                            Contact:  0553 590 131<br> <br>
+                            <span class="themecolor"> Kurunegala Fire & Rescue   </span> <br>Address: Municipal Council, Kurunegala <br>
+                            Contact: 0372 222 270<br> <br>
+                            <span class="themecolor">   Nuwara Eliya Fire & Rescue </span> <br>Address: Nuwara Eliya-Uda Pussellawa Rd, Nuwara Eliya <br>
+                            Contact: 0522 222 121<br> <br>
+                            <span class="themecolor">     Ampara Fire & Rescue   </span> <br>Address: Urban Council, Ampara <br>
+                            Contact: 0632 223 997<br> <br>
+                            <span class="themecolor"> Trincomalee Fire & Rescue  </span> <br> Address: Main St, Trincomalee <br>
+                            Contact: 0262 222 100<br> <br>
+                            <span class="themecolor">Ratnapura Fire Brigade </span> <br> Address: Sripada Mawatha, Ratnapura <br>
+                            Contact: 0452 226 811<br> <br>
+                            <span class="themecolor"> Horana Fire & Rescue Unit </span> <br>Address: Pola para, Horana <br>
+                            Contact: 0342 267 555
+                            </p><br> <br>
+                            <span class="themecolor"> Chilaw Fire & Rescue   </span> <br> Address: Kurunegala, Chilaw - Wariyapola Rd, Chilaw <br>
+                            Contact: 0322 220 055<br> <br>
+                            <span class="themecolor">  Kilinochchi Fire Service Division </span> <br>Address: Kandy Rd, Kilinochchi <br>
+                            Contact: 0212 283 333<br> <br>
+                            <span class="themecolor">   Mawanella Fire Service Division  </span> <br> Address: 7F23+457, Mawanella <br>
+                            Contact: 0354 927 828<br> <br>
+                          
+                             </B> </h4>
+
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Content">
+                <div class="content_wrapper clearfix">
+                    <div id="map"></div>
+
+                    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+                    <script src="js/map.js"></script>
+                </div>
+            </div>
+            <footer id="Footer" class="clearfix">
+                <div class="widgets_wrapper">
+                    <div class="container">
+                        <div class="column one-second">
+                            <aside
+                                class="widget_text widget widget_custom_html"
+                            >
+                                <div class="textwidget custom-html-widget">
+                                    <p>Emergency call?</p>
+                                    <h3>
+                                        <a href="#"
+                                            >110<br />0112 422222<br />
+                                            0112 422223 <br
+                                        /></a>
+                                    </h3>
+                                </div>
+                            </aside>
+                        </div>
+                        <div class="column one-fourth">
+                            <aside
+                                class="widget_text widget widget_custom_html"
+                            >
+                                <div class="textwidget custom-html-widget">
+                                    <p>
+                                        Opening hours:
+                                        <br />
+                                        Daily 06:00 AM to 07:30 PM <br />
+                                        Emergency office: 24h
+                                    </p>
+                                </div>
+                            </aside>
+                        </div>
+                        <div class="column one-fourth">
+                            <aside
+                                class="widget_text widget widget_custom_html"
+                            >
+                                <div class="textwidget custom-html-widget">
+                                    <p>
+                                        Main Fire Station (Head Quarters),
+                                        <br />
+                                        T.B. Jaya Mawatha <br />
+                                        Colombo 10 <br />
+                                        Sri Lanka.
+                                    </p>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer_copy">
+                    <div class="container">
+                        <div class="column one">
+                            <a id="back_to_top" class="button button_js" href><i class="icon-up-open-big"></i></a>
+                            <div class="copyright">
+                                &copy; 2023 - CMC Fire Service Department - HTML by <a target="_blank" rel="nofollow" href="https://www.facebook.com/profile.php?id=100092459050529&mibextid=LQQJ4d">Element Hive</a>
+                            </div>
+                            <ul class="social">
+                                <li class="facebook">
+                                    <a href="https://www.facebook.com/colombofirebrigade?mibextid=ZbWKwL" title="Facebook"><i class="icon-facebook"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- JS -->
+        <script src="/assets/js/jquery-3.6.0.min.js"></script>
+        <script src="/assets/js/jquery-migrate-3.4.0.min.js"></script>
+
+        <script src="/assets/js/mfn.menu.js"></script>
+        <script src="/assets/js/jquery.plugins.js"></script>
+        <script src="/assets/js/jquery.jplayer.min.js"></script>
+        <script src="/assets/js/animations/animations.js"></script>
+        <script src="/assets/js/translate3d.js"></script>
+        <script src="/assets/js/scripts.js"></script>
+    </body>
+</html>
